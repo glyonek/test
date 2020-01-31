@@ -1,0 +1,86 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+buff                                                                              0x0160      30
+type                                                                              0x017E       1
+t1                                                                                0x017F       1
+t2                                                                                0x0180       1
+t3                                                                                0x0181       1
+t4                                                                                0x0182       1
+t5                                                                                0x0183       1
+TminZ                                                                             0x0184       1
+TminN                                                                             0x0185       1
+KilkistZapuskiv                                                                   0x0186       1
+AvtRu                                                                             0x0187       1
+up                                                                                0x0188       1
+down                                                                              0x0189       1
+enter                                                                             0x018A       1
+PositionPointer                                                                   0x018B       1
+podsvet                                                                           0x018C       1
+U_Bat                                                                             0x018D       2
+U1                                                                                0x018F       2
+T                                                                                 0x0191       2
+rotor                                                                             0x0193       1
+interrapt_counter                                                                 0x0194       2
+second_counter                                                                    0x0196       1
+minut_counter                                                                     0x0197       2
+temp                                                                              0x0199       2
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+Termo                                                                             0x0000     256
+typeEEP                                                                           0x0100       1
+t1EEP                                                                             0x0101       1
+t2EEP                                                                             0x0102       1
+t3EEP                                                                             0x0103       1
+t4EEP                                                                             0x0104       1
+t5EEP                                                                             0x0105       1
+TminZEEP                                                                          0x0106       1
+TminNEEP                                                                          0x0107       1
+Z_EEP                                                                             0x0108       1
+R_EEP                                                                             0x0109       1
+KilkistZapuskiv_EEP                                                               0x010A       1
+NarabotkaEEP                                                                      0x010B       2
+TO_EEP                                                                            0x010D       1
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+LCD_X                                                                             R5           1
+LCD_Y                                                                             R4           1
+z                                                                                 R2.0      1bit
+r                                                                                 R2.1      1bit
+TO_output                                                                         R2.2      1bit
+podmenu                                                                           R2.3      1bit
+U_Bat_ADC                                                                         R6,R7        2
+T_ADC                                                                             R8,R9        2
+U1_ADC                                                                            R10,R11      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+LCD_init                                                                          0x00436     61
+LCD_Mode                                                                          0x00473     14
+LCD_Sleep                                                                         0x00481     14
+LCD_Commmand                                                                      0x0048F     12
+LCD_Goto                                                                          0x0049B     21
+LCD_Clear                                                                         0x004B0     43
+LCD_Blinc                                                                         0x004DB     16
+LCD_CharVeryBig                                                                   0x004EB    101
+LCD_Printf                                                                        0x00550     22
+ShowLine                                                                          0x00566      6
+ShowBigLine                                                                       0x0056C     12
+read_adc                                                                          0x00578     15
+UpDownEnterKey                                                                    0x00587    149
+timer0_ovf_isr                                                                    0x0061C    207
+PerehodNaGenerator                                                                0x006EB      4
+PerehodNaMereju                                                                   0x006EF      4
+Klapan_off                                                                        0x006F3     20
+MainInfo                                                                          0x00707     68
+main                                                                              0x0074B    937
+put_buff_G100                                                                     0x00AF4     45
+_print_G100                                                                       0x00B21    392
+sprintf                                                                           0x00CA9     43
+strlen                                                                            0x00CD4     11
+strlenf                                                                           0x00CDF     12
